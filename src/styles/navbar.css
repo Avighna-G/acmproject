@@ -1,0 +1,149 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 251, 251, 0.2);
+    padding: 5px 35px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    height: 9vh;
+}
+#navbutton {
+    background-color: rgb(125, 181, 247);
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    color: black;
+
+}
+.button-content:hover{
+    color: black;
+} 
+.button-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.logimg{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navlinks #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navlinks #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    display: inline-block;
+}
+.navlinks #navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 1s;
+}
+.navlinks #navbar li:hover a{
+
+    font-weight: 600;
+    transition: all 1s;
+}
+.navlinks #navbar li .active{
+    color: rgb(125, 181, 247);
+    font-weight: 300;
+}
+.navlinks #navbar li .active::after { 
+    content:"";
+    display:block;
+    width:80%;
+    border-bottom: 0.1em solid rgb(125, 181, 247);
+    position: absolute;
+    margin:auto;
+    margin-top: 2px;
+    left: 10%; 
+    right: 10%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+
+.navlinks #navbar li:active a{
+    transition: none;
+	color: rgb(125, 181, 247);
+
+}
+
+
+#mob{
+    display: none;
+}
+#mob i{
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (max-width:769px){    
+    .navlinks #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:9vh;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgb(1, 1, 56);
+        box-shadow: 0 40px 60px rgba(255,255,255,0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+    .navlinks #navbar.active{
+        right: 0px;
+        background-color: rgb(1, 1, 56);
+        box-shadow: 0 40px 60px rgba(255,255,255,0.1);
+        padding: 40px 0 0 10px;
+    }
+    #mob{
+        display: block;
+    }
+    .navlinks #navbar li{
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .navlinks #navbar li .active::after { /* this is the border */
+        content:"";
+        display:block;
+        width:80%;
+        border-bottom: 0.1em solid rgb(125, 181, 247);
+        position: absolute;
+        margin:auto;
+        margin-top: 2px;
+        left: 10%; 
+        right: 10%;
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out, right 0.3s ease-in-out;
+    }
+    #navbutton {
+        margin: auto;
+    
+    }
+
+}
