@@ -6,12 +6,9 @@ import {HashLink} from 'react-router-hash-link'
 import ACMlogo from '../logo.png';
 import {navItems} from '../jsonfiles/NavItems';
 export default function NavBar(){
-    
-    
     let [mob,nmob]=useState('');
     let [cli,acli]=useState('fa fa-bars');
     const chClass=()=>{
-    
         if(cli==='fa fa-bars'){
             acli('fa fa-times')
             nmob("#navbar active")
@@ -33,7 +30,7 @@ export default function NavBar(){
         {navItems.map((item, index) => {
                 if (item.title === "ContactUs") {
                      return (
-                        <li key={item.id} className='navitcb' onClick={chClass}>
+                        <li key={item.id} onClick={()=>chClass()}   >
                             <button id="navbutton">
                                 <HashLink to="/#ctus" className="button-content">
                                     <BiSolidMessageRoundedEdit size={28}/><span>ContactUs</span>
@@ -43,7 +40,7 @@ export default function NavBar(){
                     );
                 } else {
                 return (
-                        <li key={index} onClick={chClass}>
+                        <li key={index} onClick={()=>chClass()}>
                             <NavLink activeClassName="active" to={item.path}>
                                 {item.title}
                             </NavLink>

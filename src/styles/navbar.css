@@ -60,7 +60,7 @@ nav{
     transition: all 1s;
 }
 .navlinks #navbar li:hover a{
-
+    color: rgb(125, 181, 247);
     font-weight: 600;
     transition: all 1s;
 }
