@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavBar from './components/NavBar';
 import Memberships from './components/Memberships';
@@ -9,9 +9,9 @@ import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden text-center">
       <NavBar/>
-      <div>
+      <div className='w-full h-screen'>
         <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Events/>}/>
