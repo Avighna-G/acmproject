@@ -27,7 +27,7 @@ export const navItems=[
     {
         id :6,
         title: "ContactUs",
-        path:"/#ctus"
+        path:"/contactus"
     }
 ]
 export const gallHashItems=[
@@ -56,8 +56,6 @@ export const gallHashItems=[
         title: "2018-2019",
         path:"/gallery#gall2018-19"
     },
-    
-
 ]
 export const eventHashItems=[
     {

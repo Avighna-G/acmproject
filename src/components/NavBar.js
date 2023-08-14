@@ -44,7 +44,7 @@ export default function NavBar() {
                       className="bg-[#7db5f7] border-none px-[20px] py-[10px] group flex items-center gap-[7px] cursor-pointer"
                     >
                       <HashLink
-                        to="/#ctus"
+                        to="/contactus"
                         className=" group-hover:text-black duration-500 font-medium flex items-center no-underline text-white "
                       >
                         <BiSolidMessageRoundedEdit size={28} />

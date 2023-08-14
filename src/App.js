@@ -1,6 +1,7 @@
 
 import './App.css';
 import NavBar from './components/NavBar';
+import Contactus from './components/Contactus';
 import Memberships from './components/Memberships';
 import Events from './components/Events';
 import Gallery from './components/Gallery';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/team" element={<Team/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/memberships" element={<Memberships/>}/>
+        <Route path="/contactus" element={<Contactus/>}/>
         </Routes>
       </div>
       
