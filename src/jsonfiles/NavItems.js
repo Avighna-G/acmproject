@@ -1,3 +1,30 @@
+export const Doptions=[
+    { 
+        title:"2022 - 2023",
+        path:"",
+        year:"2022 - 2023"
+    },
+    { 
+        title:"2021 - 2022",
+        path:"events21-22",
+        year:"2021 - 2022"
+    },
+    { 
+        title:"2020 - 2021",
+        path:"events20-21",
+        year:"2020 - 2021"
+    },
+    { 
+        title:"2019 - 2020",
+        path:"events19-20",
+        year:"2019 - 2020"
+    },
+    { 
+        title:"2018 - 2019",
+        path:"events18-19",
+        year:"2018 - 2019"
+    }
+]
 export const navItems=[
     {
         id :1,

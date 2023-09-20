@@ -63,6 +63,9 @@
 
     font-weight: 500;
 } */
+nav{
+    z-index: 1000;
+}
 .navlinks #navbar li .active{
     color: rgb(125, 181, 247);
     font-weight: 500;

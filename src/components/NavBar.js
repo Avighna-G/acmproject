@@ -19,12 +19,12 @@ export default function NavBar() {
   };
   return (
     <>
-      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[9vh] bg-[#010138] w-[100%] fixed">
+      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[9vh] bg-[#010138] w-[100%] fixed z-1000">
         <div className="flex items-center justify-center">
           <NavLink to="/">
 
           <img
-            className=" h-[50px] w-[50px] p-[5px]"
+            className="h-[50px] w-[50px] p-[5px]"
             src={ACMlogo}
             alt=""
             ></img>
@@ -53,7 +53,26 @@ export default function NavBar() {
                     </button>
                   </li>
                 );
-              } else {
+              } else if(item.title=="Events") {
+                return (
+                  <li
+                    key={index}
+                    onClick={chClass}
+                    className="list-none px-[20px] relative inline-block"
+                  >
+                    <NavLink
+                      activeclassname="active"
+                      className=" no-underline text-white text-lg font-normal hover:font-medium"
+                      to={{pathname:item.path, state: {title:'2022-2023'}}}
+                      
+                    >
+                      {item.title}
+                    </NavLink>
+                  </li>
+                );
+              
+              }
+              else{
                 return (
                   <li
                     key={index}
