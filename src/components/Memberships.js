@@ -1,63 +1,29 @@
 import React from 'react'
+import { membershiptypes } from '../jsonfiles/Membershiptypes';
+import Testimonies from './Testimonials';
 import { Link } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
-import '../styles/Memberships.css';
+// import '../styles/Memberships.css';
 function Memberships() {
   const arr=[1,2,3];
   arr.length=3;
   return(
-      <>
-        <div className='membership'>
-              <div className='title text-black'>
-                  <h1>Memberships</h1>
-              </div>
-              <p className="membershipdesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              
-              </p>
-              <div className='membershiptypes'>
-                  <div className="membertype">
-                      <h5>Membership Type-1</h5>
-                      <p className="typedesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                  
-                      </p>
-                      <button><Link to="/contactUs" className='text-decoration-none text-white'><b>Contact Us</b></Link></button>
-                      
-                      
-                  </div>
-                  <div className="membertype">
-                      <h5>Membership Type-2</h5>
-                      <p className="typedesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                  
-                      </p>
-                          <button><b>Register</b></button>
-                  </div>
-              </div>
+        <div className='px-3'>
+            <h1 className='text-3xl font-bold text-center my-5'> Memberships</h1>
+            <div className='flex flex-col md:flex-row md:gap-[1rem] xl:justify-around'>
+                {
+                    membershiptypes.map((item)=>{
+                        return(
+                            <div key={item.id} className='mb-4 border border-gray-700 px-3 xl:w-1/3'>
+                                <h1 className='text-center text-black font-bold mt-2'>{item.title}</h1>
+                                <p className='text-center text-black mt-2'>{item.description}</p>
+                                <button className='bg-[#87ceeb] py-2 px-4 rounded-[0.2rem] my-3'> <Link to={item.linkto}>Register here</Link> </button>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <Testimonies/>
         </div>
-        <div  className="testimony-h1" style={{height:"90px"}}>
-            <h1>Testimonials</h1>
-        </div>
-        <div className='testimonials'>
-        {
-            arr.map(()=>{
-                return (
-                    <>
-                        <Card className='testimony'>
-                                <Card.Body>
-                                    {/* <img src={img1} alt='A Person'/> */}
-                                    <h3>Something</h3>
-                                    <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    </p>
-                                </Card.Body>
-                            </Card> 
-                      
-                    </>
-                )
-            })
-        }
-        </div>
-      </>
-
   );
 }
 

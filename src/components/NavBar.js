@@ -19,16 +19,15 @@ export default function NavBar() {
   };
   return (
     <>
-      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[9vh] bg-[#010138] w-[100%] fixed">
+      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[9vh] bg-[#010138] w-[100%]">
         <div className="flex items-center justify-center">
           <NavLink to="/">
-
-          <img
-            className=" h-[50px] w-[50px] p-[5px]"
-            src={ACMlogo}
-            alt=""
+            <img
+              className=" h-[50px] w-[50px] p-[5px]"
+              src={ACMlogo}
+              alt=""
             ></img>
-            </NavLink>
+          </NavLink>
         </div>
         <div className="navlinks">
           <ul
