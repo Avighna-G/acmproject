@@ -19,7 +19,7 @@ export default function NavBar() {
   };
   return (
     <>
-      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[9vh] bg-[#010138] w-[100%] fixed z-1000">
+      <nav className="navbar flex items-center justify-between py-[5px] px-[35px] overflow-hidden shadow-xl h-[10vh] bg-[#010138] w-[100%] fixed z-1000">
         <div className="flex items-center justify-center">
           <NavLink to="/">
 
@@ -45,7 +45,7 @@ export default function NavBar() {
                     >
                       <HashLink
                         to="/#ctus"
-                        className=" group-hover:text-black duration-500 font-medium flex items-center no-underline text-white "
+                        className="font-medium flex items-center no-underline text-white"
                       >
                         <BiSolidMessageRoundedEdit size={28} />
                         <span>ContactUs</span>

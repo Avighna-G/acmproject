@@ -1,0 +1,12 @@
+.leftNote {
+    font-size: calc(0.7rem + 1.1vh);
+}
+
+.icons {
+    float: right;
+}
+
+.footicons {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,13 +1,21 @@
 import React from 'react'
-
+import Cover from './Cover'
+import Vision from './Vision'
+import UpComingEvns from './UpComingEvns'
+import HomeMems from './HomeMems'
+import ContactUs from './ContactUs'
 function Home() {
   return (
     <div >
-        <div className='h-screen w-full'>
-          <h1 className='h-full w-full flex   justify-center items-center text-white text-3xl'>homepage</h1>
+        <div>
+          <Cover/>
         </div>
-        <div id="ctus" className='pb-96'> 
-        <h1 className='text-stone-50'>Contact Us Form</h1>
+         <Vision/>
+         <UpComingEvns/>
+         <HomeMems/>
+        <div id="ctus"> 
+
+        <ContactUs/>
 
         </div>
     </div>

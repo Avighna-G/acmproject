@@ -13,8 +13,14 @@ export const Testimonials2223=[
     },
     {
         Name:"Akhil",
-        Desig:"Chairperson(2022-2023)",
+        Desig:"Vice Chairperson(2022-2023)",
         Content:"It is believed that a person’s life is molded in the early 20s and it is very important to be in the right place. In that case, I am glad that ACM VNRVJIET happened to me. ACM VNRVJIET has been a great contributor to the development of my personality. I have established my leadership, time management, and team skills and have also been able to advance these skills. From participating in events to conducting events through ACM VNRVJIET, my learnings and experiences will always be my fundamentals for any milestone I achieve.",
         imgPath:"Akhil.jpg"
+    },
+    {
+        Name:"Dhanush",
+        Desig:"Treasurer(2022-2023)",
+        Content:"It is believed that a person’s life is molded in the early 20s and it is very important to be in the right place. In that case, I am glad that ACM VNRVJIET happened to me. ACM VNRVJIET has been a great contributor to the development of my personality. I have established my leadership, time management, and team skills and have also been able to advance these skills. From participating in events to conducting events through ACM VNRVJIET, my learnings and experiences will always be my fundamentals for any milestone I achieve.",
+        imgPath:"Dhanush.JPG"
     },
 ]

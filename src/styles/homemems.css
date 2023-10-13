@@ -1,0 +1,91 @@
+.hello h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #1c064f;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.memsvol{
+    margin: auto;
+    align-items: center;
+}
+  
+  .two h1 {
+    text-transform: capitalize;
+    line-height: 1; /* Add this to adjust the line height for the heading */
+  }
+  
+  .two h1 span {
+    position: absolute;
+    left: 0;
+    top: 100%; /* Move it just below the "Vision" text */
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(39, 3, 96);
+    padding-left: 0.25em;
+    padding-top: 0.25em; /* Add some space between the lines */
+  }
+  
+ 
+  .two h1:before {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 120px;
+    height: 4px;
+    content: "";
+    background-color: #510d31;
+  }
+  .hello p{
+    font-size: 1em;
+    font-style: italic;
+    padding: 15px 25px 15px 25px;
+    color: #290f65;
+
+  }
+  .two{
+    padding-left: 25px;
+  }
+
+  .one h1 {
+    text-transform: capitalize;
+    line-height: 1; /* Add this to adjust the line height for the heading */
+    text-align:end;
+  }
+  
+  .one h1 span {
+    position: absolute;
+    right: 0;
+    top: 100%; /* Move it just below the "Vision" text */
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(39, 3, 96);
+    padding-right: 0.25em;
+    padding-top: 0.25em; /* Add some space between the lines */
+  }
+  
+ 
+  .one h1:before {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    width: 120px;
+    height: 4px;
+    content: "";
+    background-color: #510d31;
+  }
+  .one{
+    padding-right: 25px;
+  }
