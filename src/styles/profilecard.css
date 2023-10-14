@@ -1,0 +1,52 @@
+/* Add shadows to create the "card" effect */
+.card {
+  width: 12em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: aliceblue;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* On mouse-over, add a deeper shadow and display overlay */
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(241, 237, 237, 0.3);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  color: rgb(12, 7, 74);
+}
+
+.Avatar {
+  border-radius: 0.3rem 0.3rem 0px 0px;
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: 80%; /* Allow the image to maintain its aspect ratio */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  opacity: 0;
+  transition: opacity 0.3s; /* Add a smooth fade-in transition */
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  margin: 0 6px; /* Add margin between icons */
+  cursor: pointer;
+}

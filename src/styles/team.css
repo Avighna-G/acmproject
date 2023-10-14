@@ -51,7 +51,7 @@ table, th, td{
   overflow-y: auto; 
 }
 .table__body::-webkit-scrollbar{
-  width: 0.5rem;
+  width: 6px;
   height: 0.5rem;
 }
 .table__body::-webkit-scrollbar-thumb{
@@ -66,4 +66,101 @@ table, th, td{
 }
 td{
   text-align: center;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.close-button{
+  position: absolute;
+  top: 14px; /* Position at the top */
+  right: 20px; /* Position at the extreme right */
+  background: none; /* Remove button background */
+  border: none; /* Remove button border */
+  cursor: pointer; 
+  padding-bottom: 10px;
+}
+.modal-content .author .author-img img{
+  border-radius: 50%;
+  vertical-align: middle;
+  max-width: 120px;
+  min-height: 120px;
+  transform-style: preserve-3d;
+  margin: auto;
+  border: 2px solid #333;
+  margin-bottom: 10px;
+}
+.modal-content .author .author-desc{
+  text-align: center;
+  margin: 0;
+}
+.modal-content .author{
+  margin-top: 20px;
+}
+.teamlist{
+  border-radius: 0.8rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to bottom right, rgb(202, 220, 243), rgba(3, 8, 65, 0.8));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  @media screen and (max-width:769px){
+    height: 420px;
+  }
+}
+.teamlist .title h1{
+  font-weight: 700;
+  color: rgb(11, 11, 75);
+  font-size: 24px;
+}
+.teamlist .title{
+  padding: 12px;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(247, 248, 251, 0.9);
+  border-radius: 0.8rem 0.8rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(1, 1, 56);
+  font-size: 1.8rem;
+}
+
+.teamlist .teamgrid{
+
+  @media screen and (max-width:769px){
+
+    width: 100%;
+    max-height: 90%;
+    background-color: #fffb;
+    border-radius: 0 0 0.8rem 0.8rem;
+    overflow-y: auto
+
+  }
+
+}
+
+/* Apply custom scrollbar to the container */
+.teamgrid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.teamgrid::-webkit-scrollbar-track {
+  background-color: rgb(1, 1, 56);
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(6, 85, 154);
+}
+
+.teamgrid::-webkit-scrollbar-thumb {
+  background-color: rgb(6, 85, 154);   
+  border-radius: 10px;
+}
+
+.teamgrid::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(6, 85, 154);
 }

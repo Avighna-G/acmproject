@@ -1,0 +1,124 @@
+.body{
+  overflow-x:hidden;
+  max-width: 100%;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    background-color: rgb(231, 239, 247);
+  }
+  .vertical-timeline-element-title{
+    text-align: center;
+    font-weight: 800;
+    font-size:1.4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: rgb(7, 7, 86);
+  }
+  .vertical-timeline-element-icon svg{
+    fill: lightblue;
+  }
+  .vertical-timeline-element-subtitle{
+    display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight:600;   
+  text-align: left;
+  @media screen and (max-width: 512px) {
+    font-size: 0.8rem;
+ }
+  }
+  .vertical-timeline-element-p{
+    text-align: left;
+    font-style: italic;
+  }
+  /* CarouselStyles.css */
+/* Change arrow color */
+.carousel.carousel-slider .control-arrow {
+  background: rgb(11, 0, 0,0.8); /* Change the color to your desired color */
+  border-radius: 50%; /* Make the background round */
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+.carousel .carousel-status{
+  color: black;
+  text-shadow: none;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgb(12, 1, 71);
+  }
+  
+  50% {
+    box-shadow: 0 0 30px 0 rgb(112, 198, 235);
+  }
+}
+
+.btn {
+  background: none;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-glow {
+  background: rgb(138, 186, 231);
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 12px 12px;
+  box-shadow: 0 0 0 0 rgb(125, 180, 204);
+  animation: glow 1.4s linear infinite;
+  color: rgb(33, 19, 104);
+}
+
+.event-tabs{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content:center ;
+  align-items: center;
+}
+
+.event-tabs .upcmng-btn{
+  padding: 10px 15px;
+  background-color: rgb(3, 77, 142) ;
+  box-shadow: 0 10px 9px rgba(0,0,0,0.35);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 15px 0 0 15px;
+  margin: auto;
+  height: 70px;
+  color: white;
+  background: linear-gradient(to left, rgb(103, 154, 171), rgba(3, 77, 142));
+}
+.event-tabs .current-btn{
+  padding: 10px 15px;
+  background-color: rgb(3, 77, 142) ;
+  box-shadow: 0 10px 9px rgba(0,0,0,0.35);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: auto;
+  height: 70px;
+  color: white;
+  background: linear-gradient(to left, rgb(103, 154, 171), rgba(3, 77, 142));
+}
+
+.event-tabs .current-btn:hover,.event-tabs .upcmng-btn:hover {
+  color: rgb(207, 234, 236);
+  font-weight: 700;
+}

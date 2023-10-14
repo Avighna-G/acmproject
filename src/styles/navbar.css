@@ -59,10 +59,11 @@
     font-weight: 400;
     transition: all 1s;
 } */
-/* .navlinks #navbar li:hover a{
+.navlinks #navbar li:hover a{
 
     font-weight: 500;
-} */
+    color: rgb(125, 181, 247);
+} 
 nav{
     z-index: 1000;
 }

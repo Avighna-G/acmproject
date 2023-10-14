@@ -1,0 +1,39 @@
+.home-cover {
+    height: 90vh;
+    width: 100vw;
+  }
+  
+  .imagecover {
+    position: relative;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 4em;
+    font-weight: 600;
+    color: aliceblue;
+    z-index:10;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    animation: slide-up 1s ease both;
+    @media screen and (max-width:769px){
+      max-width: 80%;
+      text-align: left;
+    }
+  }
+  
+  .imagecover img {
+    filter: brightness(90%);
+    display: block;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+  

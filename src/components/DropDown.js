@@ -2,7 +2,7 @@ import "../styles/dropdown.css";
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import  { IoMdArrowDropdown } from "react-icons/io";
-import { Doptions } from "../jsonfiles/NavItems";
+import { Doptions } from "../jsonfiles/NavItems"; 
 function DropDown({selected,setSelected}) {
     const [isActive, setIsActive]=useState(false);
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ function DropDown({selected,setSelected}) {
         <div className='dropdown-btn' onClick={e => {
                                                 setIsActive(!isActive);
                                                 
-                                            }}> {selected}<span className="pl-[12px]"><IoMdArrowDropdown size={25}/></span></div>
+                                            }}>  {selected} <span className="pl-[12px]"><IoMdArrowDropdown size={25}/></span></div>
     { isActive && (
                 <div className='dropdown-content'>
                     {
