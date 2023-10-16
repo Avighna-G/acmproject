@@ -33,38 +33,39 @@ function App() {
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/memberships" element={<Memberships/>}/>
         </Routes>
+        <Footer/>
         <ScrollUpButton style={{width:'30px',height:'30px', borderRadius:'50%' , marginBottom:'10px',backgroundColor:'rgb(1, 1, 56)'}}/>
       </div>
       <div className="z-600 lg:flex fixed top-[70%] flex-col ">
         <ul>
-          <li className="flex items-center w-[120px] h-[50px] justify-between bg-blue-600 ml-[-60px] hover:ml-[0px] duration-300">
+          <li className="flex items-center w-[145px] h-[50px] justify-around bg-blue-600 ml-[-90px] hover:ml-[0px] duration-300">
             <a
               href="https://www.linkedin.com/company/acm-vnrvjiet/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center w-[100px] h-[50px] justify-between hover:text-white pl-[5px]"
+              className="flex items-center w-[100px] h-[50px] justify-between text-white pl-[5px]"
             >
-              LinkdIn
+              LinkedIn
               <FaLinkedinIn size={20} />
             </a>
           </li>
-          <li className="flex items-center w-[120px] h-[50px] justify-between bg-slate-600 ml-[-60px] hover:ml-[0px] duration-300">
+          <li className="flex items-center w-[120px] h-[50px] justify-between bg-slate-600 ml-[-65px] hover:ml-[0px] duration-300">
             <a
               href="https://github.com/acmvnrvjiet"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center w-[100px] h-[50px] justify-between hover:text-white pl-[5px]"
+              className="flex items-center w-[100px] h-[50px] justify-between text-white pl-[5px]"
             >
               GitHub
               <FaGithub size={20} />
             </a>
           </li>
-          <li className="flex items-center w-[120px] h-[50px] justify-between bg-red-700 ml-[-60px] hover:ml-[0px] duration-300">
+          <li className="flex items-center w-[120px] h-[50px] justify-between bg-red-700 ml-[-65px] hover:ml-[0px] duration-300">
             <a
               href="http://discordapp.com/users/920520844176932925"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center w-[100px] h-[50px] justify-between hover:text-white pl-[5px]"
+              className="flex items-center w-[100px] h-[50px] justify-between text-white pl-[5px]"
             >
               Discord
               <BsDiscord size={20} />

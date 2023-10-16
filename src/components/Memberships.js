@@ -8,7 +8,7 @@ import { Testimonials2223 } from '../jsonfiles/Testimonials22-23'
 function Memberships() {
   function getImagePath(currEle) {
     return currEle && Object.keys(currEle).length > 0
-      ? require(`D:/acm web/acm/src/imagProps/team5/${currEle.imgPath}`)
+      ? require(`../imagProps/team5/${currEle.imgPath}`)
       : null;
   }
   const customStyles = {
