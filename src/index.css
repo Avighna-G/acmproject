@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
-  /* background-image: url('./imagProps/5570834.jpg'); */
+  background-image: url('./imagProps/5570834.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

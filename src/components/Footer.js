@@ -1,86 +1,99 @@
 import React from "react";
-import "../styles/footer.css";
-// import imglogo from "../imagProps/teamIcons/creative.png"
-import { NavLink } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 import Mapsetup from "./Mapsetup";
-export default function Footer() {
-  const scrolltopp = () => {
-    window.scrollTo(0,0);
-  }
-  
-  return (
-    <div className="footer">
-      <div className="foot">
-        <div className="comp1">
-          <div className="map">
-            <Mapsetup zooml={14} />
-             </div>
-        </div>
-        <div className="comp2">
-          <div className="contact">
-           <h4>
-            Contact us
-            </h4> 
-            <p>
-              sy no 294, airport road mamidpally, balapur mandal rangareddy dist.<br/>
-            landmark : mamidpally to Jalpally Rd, Hyderabad, Telangana 500005
-              </p>
-          </div>
-          <div className="call">
-            <br />
-            <h4>
-            Call
-            </h4>
-            <p>
-            090007 79444
+import { NavLink } from "react-router-dom";
 
-            </p>
-            </div>
+export default function Footer() {
+  const scrollup = () => {
+    window.scrollTo(0, 0);
+  };
+  return (
+    <div className="bg-gray-800  text-gray-300">
+      <div className="flex flex-wrap justify-center w-full">
+        <div className=" p-4 m-3 lg:w-[25vw] h-[40vh] md:w-[40vw] sm:w-[40vw] sm:block md:block">
+          <Mapsetup />
         </div>
-        <div className="comp3">
-          <div className="navs">
-            <NavLink to="/" className="nvlns" onClick={scrolltopp}>
-              Home
-            </NavLink>
-            {/* <NavLink to="about" className="nvlns"  onClick={scrolltopp}>
-              About
-            </NavLink> */}
-            <NavLink to="service" className="nvlns"  onClick={scrolltopp}>
-              Services and Facilities
-            </NavLink>
-            <NavLink to="accommodation" className="nvlns"  onClick={scrolltopp}>
-            Accommodation
-            </NavLink>
-            <NavLink to="venues" className="nvlns"  onClick={scrolltopp}>
-              Venues
-            </NavLink>
-            <NavLink to="gallery" className="nvlns"  onClick={scrolltopp}>
-              Gallery
-            </NavLink>
-            <NavLink to="contact" className="nvlns"  onClick={scrolltopp}>
-              Contact us
-            </NavLink>
-          </div>
+        <div className=" p-4 m-3 lg:w-[20vw] md:w-[40vw] sm:w-[40vw] ">
+          <h1
+            className="py-1 text-xl hover:text-blue-500 duration-300"
+            onClick={scrollup}
+          >
+            {" "}
+            <NavLink to="/">Home</NavLink>
+          </h1>
+          <h1
+            className="py-1 text-xl hover:text-blue-500 duration-300"
+            onClick={scrollup}
+          >
+            <NavLink to="/events">Events</NavLink>
+          </h1>
+          <h1
+            className="py-1 text-xl hover:text-blue-500 duration-300"
+            onClick={scrollup}
+          >
+            <NavLink to="/gallery">Gallery</NavLink>
+          </h1>
+          <h1
+            className="py-1 text-xl hover:text-blue-500 duration-300"
+            onClick={scrollup}
+          >
+            <NavLink to="/team">Teams</NavLink>
+          </h1>
+          <h1
+            className="py-1 text-xl hover:text-blue-500 duration-300"
+            onClick={scrollup}
+          >
+            <NavLink to="/memberships">Memberships</NavLink>
+          </h1>
         </div>
-        <div className="comp4">
-          {/* <img src={imglogo} alt="" className="imglo" /> */}
-          <div>
-            <button className="icons">
-              <FaFacebook size={25} />
-            </button>
-            <button className="icons">
-              <FaInstagram size={25} />
-            </button>
-            <button className="icons">
-              <FaTwitter size={25}/>
-            </button>
-          </div>
+        <div className=" p-4 m-3 lg:w-[20vw] md:w-[40vw] sm:w-[40vw] ">
+          <h2 className="text-2xl text-gray-200 py-2">Company</h2>
+          <h1 className="py-1">Support</h1>
+          <h1 className="py-1">About Company</h1>
+          <h1 className="py-1">Careers</h1>
+        </div>
+        <div className=" p-4 m-3 lg:w-[20vw] md:w-[40vw] sm:w-[40vw] ">
+          <h2 className="text-2xl text-gray-200 py-2">Resources</h2>
+          <h1 className="py-1">Events</h1>
+          <h1 className="py-1">Jobs directory</h1>
+          <h1 className="py-1">Company directory</h1>
+          <h1 className="py-1">Release notes</h1>
         </div>
       </div>
-      <div className="line" />
-      <div className="copyright">
-        <p>Copyright © ACM VNRVJIET. All rights reserved.</p>
+      {/* social media handles */}
+      <div className="text-center w-full p-5">
+        <span className="sm:inline hidden text-lg">Follow us on :</span>
+        <span className=" p-2 text-xl">
+          <a href="">
+            <BsFacebook className=" inline" />
+          </a>
+        </span>
+        <span className=" p-2 text-xl">
+          <a href="">
+            <BsInstagram className=" inline" />
+          </a>
+        </span>
+        <span className=" p-2 text-xl">
+          {" "}
+          <a href="">
+            <BsTwitter className=" inline" />
+          </a>
+        </span>
+        <span className=" p-2 text-xl">
+          {" "}
+          <a href="">
+            <BsLinkedin className=" inline" />
+          </a>
+        </span>
+      </div>
+      <div className="flex justify-center w-full">
+        <div className="w-[85vw] h-[1px] bg-gray-400"></div>
+      </div>
+
+      {/* copy rights */}
+      <div className="text-center w-full p-5">
+        © 2023 ACM VNRVJIET, Inc. All rights reserved.
       </div>
     </div>
   );
