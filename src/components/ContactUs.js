@@ -27,20 +27,22 @@ function ContactUs() {
             <div className='text-start lg:flex lg:flex-row lg:justify-between'>
               <div className=''>
                 <label htmlFor='name' className='block mt-3 text-white'>Name:</label>
-                <input required id='name' name='name' type='text' placeholder='Enter your name' className='w-full focus:outline-none p-1 lg:w-[15rem] xl:w-[18rem] 2xl:w-[22rem] rounded-md'/>
+                <input required id='name' name='name' type='text' placeholder='Enter your name' className='w-full border-2 focus:outline-none p-1 lg:w-[15rem] xl:w-[18rem] 2xl:w-[22rem] rounded-md'/>
               </div>
               <div className=''>
                 <label htmlFor='email' className='block mt-3 text-white'>Email:</label>
-                <input required id='email' name='email' type='email' placeholder='Enter your mail' className='w-full focus:outline-none p-1 lg:w-[15rem] xl:w-[18rem] 2xl:w-[22rem] rounded-md'/>
+                <input required id='email' name='email' type='email' placeholder='Enter your mail' className='w-full border-2 focus:outline-none p-1 lg:w-[15rem] xl:w-[18rem] 2xl:w-[22rem] rounded-md'/>
               </div>      
             </div>
             <div className='text-start'>
               <label htmlFor='message' className='block mt-3 text-white' >Message:</label>
-              <textarea required id='message' name='message' placeholder='Enter your message' className='w-full focus:outline-none p-1 sm:h-[9rem] lg:h-[9rem] rounded-md'/>
-              <button  className='bg-[#87ceeb] py-2 px-5 rounded-[0.2rem] my-3 block mx-auto text-center' value='Send' type='submit'>Submit</button>
+              <textarea required id='message' name='message' placeholder='Enter your message' className='w-full border-2 focus:outline-none p-1 sm:h-[9rem] lg:h-[9rem] rounded-md'/>
+              <button  className='bg-[#87ceeb] hover:border-2 hover:border-[#44768a] duration-300 hover:shadow-lg hover:shadow-gray-400 py-2 px-5 rounded-[0.2rem] my-3 block mx-auto text-center' value='Send' type='submit'>Submit</button>
             </div>
           </div>
         </form>    
+        
+        <br /><br />
     </div>
     
   );

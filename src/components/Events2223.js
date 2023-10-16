@@ -15,7 +15,7 @@ import { useState } from 'react';
 function Events2223(props) {
   function getImagePath(currEle) {
     return currEle && Object.keys(currEle).length > 0
-      ? require(`D:/acm web/acm/src/imagProps/team5/${currEle.imgPath}`)
+      ? require(`../imagProps/team5/${currEle.imgPath}`)
       : null;
   }
   const customStyles = {

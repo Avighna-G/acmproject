@@ -16,7 +16,6 @@ function Home() {
         <div id="ctus"> 
 
         <ContactUs/>
-
         </div>
     </div>
   )
