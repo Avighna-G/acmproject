@@ -5,6 +5,7 @@ import Testimonials from './Testimonials'
 import { useState } from 'react'
 import { IoClose } from 'react-icons/io5'
 import { Testimonials2223 } from '../jsonfiles/Testimonials22-23'
+import RazorpayPaymentButton from './RazorpayPaymentButton'
 function Memberships() {
   function getImagePath(currEle) {
     return currEle && Object.keys(currEle).length > 0
@@ -60,7 +61,7 @@ function Memberships() {
         <br/><br/>Beyond its role as a platform for technical learning and skill-sharing, ACM is renowned for its ability to instill teamwork and dedication in its members. We empower individuals to reach new heights in their professional journeys. With a global membership exceeding 100,000, our community continues to flourish with each passing year. As a chapter with a storied history, we hold a prominent place within the walls of VNRVJIET.
         <br/><br/>Our dedicated team works tirelessly to enhance awareness and broaden the horizons of technology. We are committed to making the wonders of technology accessible to an ever-expanding audience, driving innovation and sharing our passion with the world. Join us on this remarkable journey as we collectively shape the future of technology.
         </p>
-        <a className="button-15" href="https://easypay.axisbank.co.in/">Register Now!</a>
+        <a className="button-15">Register Here!<br/><RazorpayPaymentButton/></a>
     </div>
    </div>
    <div className="w-[90%] bg-white bg-opacity-85 m-auto p-2 mt-[50px] mx-auto hello1">

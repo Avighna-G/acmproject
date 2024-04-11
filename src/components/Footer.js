@@ -38,7 +38,7 @@ export default function Footer() {
             className="py-1 text-xl hover:text-blue-500 duration-300"
             onClick={scrollup}
           >
-            <NavLink to="/team">Teams</NavLink>
+            <NavLink to="/team">Team</NavLink>
           </h1>
           <h1
             className="py-1 text-xl hover:text-blue-500 duration-300"
@@ -48,17 +48,16 @@ export default function Footer() {
           </h1>
         </div>
         <div className=" p-4 m-3 lg:w-[20vw] md:w-[40vw] sm:w-[40vw] ">
-          <h2 className="text-2xl text-gray-200 py-2">Company</h2>
+          <h2 className="text-2xl text-gray-200 py-2">Our Student Chapter</h2>
           <h1 className="py-1">Support</h1>
-          <h1 className="py-1">About Company</h1>
+          <h1 className="py-1">About Us</h1>
           <h1 className="py-1">Careers</h1>
         </div>
         <div className=" p-4 m-3 lg:w-[20vw] md:w-[40vw] sm:w-[40vw] ">
           <h2 className="text-2xl text-gray-200 py-2">Resources</h2>
-          <h1 className="py-1">Events</h1>
-          <h1 className="py-1">Jobs directory</h1>
-          <h1 className="py-1">Company directory</h1>
-          <h1 className="py-1">Release notes</h1>
+          <h1 className="py-1">Vision</h1>
+          <h1 className="py-1">Memberships</h1>
+          <h1 className="py-1">Contact Us</h1>
         </div>
       </div>
       {/* social media handles */}
@@ -70,7 +69,7 @@ export default function Footer() {
           </a>
         </span>
         <span className=" p-2 text-xl">
-          <a href="">
+          <a href="https://www.instagram.com/acm_vnrvjiet">
             <BsInstagram className=" inline" />
           </a>
         </span>
